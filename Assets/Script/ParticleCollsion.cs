@@ -39,8 +39,6 @@ public class ParticleCollsion : MonoBehaviour
             UpdateN2O4UI.numN2O4++;
             UIScript.numNO2 -= 2; 
 
-            //nums.Molecule_Math(-2, 1);
-
         }
         //Debug.Log("This collider tag is:" + thisCollider.tag);
         //Debug.Log("Other collider tag is:" + otherCollider.tag);
