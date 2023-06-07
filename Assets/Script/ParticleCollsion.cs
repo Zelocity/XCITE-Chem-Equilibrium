@@ -38,6 +38,7 @@ public class ParticleCollsion : MonoBehaviour
             Destroy(gameObject);
 
             UpdateN2O4UI.numN2O4++;
+            UIScript.numNO2 -= 2; 
 
             //nums.Molecule_Math(-2, 1);
 

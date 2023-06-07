@@ -7,9 +7,14 @@ using TMPro;
 public class UIScript : MonoBehaviour
 {
     //Vars
-    private static int numNO2 = 0;
+    public static int numNO2 = 0;
     public TextMeshProUGUI particleNum;
     public GameObject particleGen;
+
+    private void Update()
+    {
+        N02Count();
+    }
 
     public void SliderController(Slider slider)
     {
