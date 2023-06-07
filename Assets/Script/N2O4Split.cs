@@ -11,19 +11,19 @@ public class N2O4Split : MonoBehaviour
     public GameObject particleGen;
     float timer = 0f;
     private int listSize = 0;
-    private List<GameObject> currList = null;
+    static private List<GameObject> currList = null;
 
 
     void Update()
     {
-        //currList = particleGen.GetComponent<ParticleGeneration>().GetN2O4List();
-        //listSize = currList.Count;
-        //timer += Time.deltaTime;
+        currList = particleGen.GetComponent<ParticleGeneration>().GetN2O4List();
+        listSize = currList.Count;
+        timer += Time.deltaTime;
 
         if (timer > 5f && listSize > 0)
         {
             Debug.Log("5 SECONDS PASSED. About to delete");
-            //particleGen.GetComponent<ParticleGeneration>().DestroyGameObjects("N2O4");
+            particleGen.GetComponent<ParticleGeneration>().DestroyGameObjects("N2O4");
             timer = 0f;
         }
 
